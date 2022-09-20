@@ -7,7 +7,7 @@
  * Author: Deogracius
  **/
 
-int _atoi(char *s)
+int _atoi(char *src)
 {
 	int i, val, sign;
 
