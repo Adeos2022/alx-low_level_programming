@@ -3,6 +3,7 @@
  * Auth: Deogracius
  */
 
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -11,12 +12,12 @@
  *
  * Return: The length of @str.
  */
- _strlen(const char *str)
+ int _strlen(const char *str)
 {
-	_strlen length = 0;
+       int len = 0;
 
-	while (*str++)
-		length++;
+	while (*(s + len) != '\0')
+		len++;
 
-	return (length);
+	return (len);
 }
