@@ -1,17 +1,19 @@
-#include "main.h"
-
-/**
-* _puts-prints astring in stdout
-*Return:void
-*/
-void _puts(char *str)
-{
-int i=0;
-
-while (*(str+i))
-{
-_putchar (*(str+i));
-i++;
+#include "main.h" 
+#include <stdio.h>
+ /** 
+  * _puts - prints a string in stdout 
+  * @str: string to print 
+  * 
+  * Return: void 
+   */                 
+void _puts(char *str)                              
+{                                                  
+int i=0;                                           
+while (*(str+i))                                   
+{                                                  
+_putchar (*(str+i));                               
+i++;                                               
+}                                                  
+_putchar('\n');                                    
 }
-_putchar('\n');
-}
+_putchar('\n'); 
