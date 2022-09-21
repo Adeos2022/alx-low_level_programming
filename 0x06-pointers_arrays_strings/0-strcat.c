@@ -1,29 +1,20 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
- * @src: second string to copy from
- * @dest: string to be overwritten
- * Description: concatenates src to end of dest
- * Author: Deogracius
- **/
+ * *_strcat - concatenates @src to @dest
+ * @src: the source string to append to @dest
+ * @dest: the destiation string to be concatenated upon
+ * Return:pointer to the resulting string
+ */
 
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int index = 0;
+	int dest_len = 0;
 
-	i = 0;
-
-	while (dest[i] != '\0')
-		i++;
-
-	for (j = 0; src[j] != '\0'; j++)
-	{
-		dest[i] = src[j];
-		i++;
-	}
-
-	dest[i] = src[j];
-
+	while (dest[index++])
+		dest_len++;
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
 	return (dest);
 }
