@@ -51,6 +51,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 
 	return (r + r_index + 1);
 }
+
 /**
  * infinite_add - Adds two numbers.
  * @n1: The first number to be added.
@@ -92,6 +93,7 @@ int main(void)
 
   a[2] = 1024;
   p = &n;
+
   /*
    * write your line of code here...
    * Remember:
@@ -100,8 +102,11 @@ int main(void)
    * - only one statement
    * - you are not allowed to code anything else than this line of code
    */
+
   *(p + 5) = 98;
+
   /* ...so that this prints 98\n */
+
   printf("a[2] = %d\n", a[2]);
   return (0);
 }
